@@ -1,0 +1,140 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+article {
+    animation: awal 1s;
+    padding: 20px 5% 5% 5%;
+    background-size: 20px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.atas {
+    position: relative;
+    width: 100%;
+    height: max(240px, 70vh);
+    background: url(https://images.unsplash.com/photo-1488903809927-48c9b4e43700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGRhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60);
+    color: white;
+    padding: 8px 8px 8px 5%;
+    box-sizing: border-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.atas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, black 100%);
+    animation: atasawal 1s;
+}
+.atas-content-container {
+    position: absolute;
+    bottom: 0;
+}
+@keyframes atasawal {
+    from {
+        background: linear-gradient(transparent, black 0%);
+    }
+    to {
+        background: linear-gradient(transparent, black 100%);
+    }
+}
+
+h1 {
+    font-family: 'bebas';
+    font-size: 50pt;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 2px 4px 2px #a12828, -2px -2px 2px #6b1a95;
+    animation: khusush 1s;
+    transform: translateY(0);
+}
+h3 {
+    font-family: 'cairo';
+    margin-top: 0;
+    animation: khusush 1.1s;
+    transform-origin: left;
+}
+h3::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: yellow;
+}
+.judultambahan {
+    width: 100%;
+    font-family: 'cairo';
+    font-size: 1.17em;
+    font-weight: bold;
+}
+#kelompok {
+    font-weight: bold;
+    font-size: large;
+    animation: awal 1.2s;
+    margin-top: 0;
+}
+
+.page {
+    top: 0;
+    left: 0;
+    position: fixed;
+    /* background-color: blue; */
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    transform: rotate3d(0, 1, 0, 45deg);
+    transform-origin: left;
+    background: linear-gradient(to right, #1000ff, #6158ff);
+}
+.nama ul{
+    list-style: none;
+    padding-left: 20px;
+}
+#anggota {
+    padding: 5%;
+}
+
+.foto {
+    float: right;
+    width: 200px;
+}
+
+@keyframes awal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes khusush {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.8, 0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@font-face {
+    font-family: cairo;
+    src: url(cairo_variablefont.ttf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(Bebas_Neue/BebasNeue-Regular.ttf);
+}
