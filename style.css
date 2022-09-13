@@ -101,12 +101,25 @@ h3::before {
     padding-left: 20px;
 }
 #anggota {
-    padding: 5%;
+    float: right;
+    width: 25%;
+    margin-left: 0;
+    box-sizing: border-box;
 }
 
-.foto {
+ol {
+    width: calc(100% - 280px);
+    float: left;
+}
+galeri {
+    width: 280px;
     float: right;
-    width: 200px;
+}
+img {
+    width: 220px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px red;
+    margin: 8px;
 }
 
 @keyframes awal {
@@ -127,6 +140,21 @@ h3::before {
     to {
         opacity: 1;
         transform: scale(1, 1);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    ol {
+        float: none;
+        width: unset;
+    }
+    .galeri {
+        float: none;
+        width: unset;
+    }
+    #anggota {
+        float: none;
+        width: unset;
     }
 }
 
