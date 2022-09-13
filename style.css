@@ -105,6 +105,7 @@ h3::before {
     width: 270px;
     margin-left: 0;
     box-sizing: border-box;
+    margin-right: 5;
 }
 
 ol {
@@ -115,7 +116,7 @@ galeri {
     width: 280px;
     float: right;
 }
-img {
+.galeri * {
     width: 220px;
     border: 1px solid gray;
     box-shadow: 2px 2px red;
