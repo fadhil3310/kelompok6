@@ -155,6 +155,7 @@ img {
     #anggota {
         float: none;
         width: unset;
+        padding: 5%;
     }
 }
 
